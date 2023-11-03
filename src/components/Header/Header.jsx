@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import ava from '../../images/ava.jpeg'
+import img from '../../images/ava.jpeg'
 import {Logo} from "../Icons/Logo";
 import {SearchInput} from "../SearchInput/SearchInput";
 import {Avatar} from "../Avatar/Avatar";
@@ -11,7 +11,7 @@ export const Header = () => {
             <Logo/>
             <div className="header-right-side">
                 <SearchInput/>
-                <Avatar img={ava}/>
+                <Avatar img={img}/>
             </div>
         </header>
     );
