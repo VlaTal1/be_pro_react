@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background: #465a70;
+}
+
+.header-right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+header .icon-container {
+    width: 120px;
+    height: 31px;
+}
