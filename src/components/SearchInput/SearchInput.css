@@ -1,0 +1,16 @@
+.search-input {
+    display: flex;
+    width: 500px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    background: #dde6f0;
+    border-radius: 10px;
+    border: none;
+    color: #5f5f5f;
+    font-family: "IBM Plex Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
