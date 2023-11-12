@@ -1,10 +1,12 @@
 .workspace-menu-item {
     display: flex;
+    width: 100%;
     padding: 5px;
     align-items: center;
     gap: 8px;
     border-radius: 10px;
     transition: all 0.2s ease;
+    cursor: pointer;
 
     &:hover {
         background: rgba(108, 152, 235, 0.55);
