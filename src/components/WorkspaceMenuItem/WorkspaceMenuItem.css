@@ -1,0 +1,30 @@
+.workspace-menu-item {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: rgba(108, 152, 235, 0.55);
+    }
+
+    &.active {
+        background: #6C98EB;
+    }
+}
+
+.workspace-menu-item .icon-container {
+    width: 24px;
+    height: 24px;
+}
+
+.workspace-menu-item-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
