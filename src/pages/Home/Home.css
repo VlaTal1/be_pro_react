@@ -1,0 +1,35 @@
+.home {
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    --font-color: #000;
+}
+
+.main-menu > * {
+    color: black!important;
+}
+
+.home .main-menu {
+    flex: 1;
+}
+
+.home .workspaces {
+    flex: 3;
+}
+
+.home .main-menu .main-menu-header li .workspace-menu-item .icon-container {
+    --accent-color: #000;
+}
+
+.home .main-menu .main-menu-header li .workspace-menu-item.active .icon-container {
+    --accent-color: #fff;
+}
+
+.home .main-menu .main-menu-header li .workspace-menu-item.active {
+    --accent-color: #fff;
+    --font-color: #fff;
+}

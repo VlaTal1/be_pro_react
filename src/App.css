@@ -1,3 +1,5 @@
 body, html {
     font-family: IBM Plex Mono;
+    --font-color: #fff;
+    background-color: #EAF4FF;
 }

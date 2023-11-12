@@ -27,7 +27,7 @@
 }
 
 .main-menu-bottom-title {
-    color: #FFF;
+    color: var(--font-color);
     text-align: center;
     font-size: 14px;
     font-style: normal;
