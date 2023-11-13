@@ -1,0 +1,16 @@
+.board-header {
+    display: flex;
+    width: 1660px;
+    padding: 15px 20px;
+    align-items: center;
+    gap: 10px;
+    background: #628BB8;
+}
+
+.title {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
