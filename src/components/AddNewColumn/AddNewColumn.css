@@ -1,0 +1,24 @@
+.add-new-column {
+    display: flex;
+    padding: 13px 15px;
+    align-items: flex-start;
+    gap: 5px;border-radius: 20px;
+    background: rgba(110, 106, 184, 0.60);
+    max-width: 310px;
+    min-width: 200px;
+    width: 20vw;
+}
+
+.add-new-column .icon-container {
+    width: 24px;
+    height: 24px;
+    --accent-color: #ffff;
+}
+
+.add-new-column p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
