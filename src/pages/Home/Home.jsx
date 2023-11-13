@@ -42,9 +42,9 @@ export const Home = () => {
     ]
 
     return (
-        <div className="home">
+        <main className="home">
             <MainMenu workspaces={workspaces}/>
             <Workspaces workspaces={workspaces} title="YOUR WORKSPACES"/>
-        </div>
+        </main>
     );
 };
