@@ -1,6 +1,6 @@
 .board-header {
     display: flex;
-    width: 1660px;
+    width: 100%;
     padding: 15px 20px;
     align-items: center;
     gap: 10px;

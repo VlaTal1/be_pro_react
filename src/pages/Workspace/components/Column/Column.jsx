@@ -1,8 +1,8 @@
 import React from 'react';
-import {DotsHorizontalIcon} from "../Icons/DotsHorizontalIcon";
+import {DotsHorizontalIcon} from "../../../../components/Icons/DotsHorizontalIcon";
 import {Task} from "../Task/Task";
 import './Column.css'
-import {PlusIcon} from "../Icons/PlusIcon";
+import {PlusIcon} from "../../../../components/Icons/PlusIcon";
 
 export const Column = ({column}) => {
     return (

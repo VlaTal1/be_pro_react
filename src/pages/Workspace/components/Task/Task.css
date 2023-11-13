@@ -6,6 +6,7 @@
     gap: 10px;
     border-radius: 15px;
     background: #D0CEEB;
+    cursor: pointer;
 }
 
 .task-name {

@@ -7,6 +7,7 @@
     max-width: 310px;
     min-width: 200px;
     width: 20vw;
+    cursor: pointer;
 }
 
 .add-new-column .icon-container {

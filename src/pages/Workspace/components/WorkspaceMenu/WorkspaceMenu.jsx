@@ -1,9 +1,9 @@
 import React from 'react';
 import './WorkspaceMenu.css'
-import {WorkspaceTitle} from "../WorkspaceTitle/WorkspaceTitle";
-import {WorkspaceMenuItem} from "../WorkspaceMenuItem/WorkspaceMenuItem";
-import {BoardIcon} from "../Icons/BoardIcon";
-import {PersonIcon} from "../Icons/PersonIcon";
+import {WorkspaceTitle} from "../../../../components/WorkspaceTitle/WorkspaceTitle";
+import {WorkspaceMenuItem} from "../../../../components/WorkspaceMenuItem/WorkspaceMenuItem";
+import {BoardIcon} from "../../../../components/Icons/BoardIcon";
+import {PersonIcon} from "../../../../components/Icons/PersonIcon";
 
 export const WorkspaceMenu = ({workspace}) => {
     return (

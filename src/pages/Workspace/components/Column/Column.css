@@ -50,6 +50,7 @@
     gap: 5px;
     border-radius: 15px;
     background: #D0CEEB;
+    cursor: pointer;
 }
 
 .new-task .icon-container {

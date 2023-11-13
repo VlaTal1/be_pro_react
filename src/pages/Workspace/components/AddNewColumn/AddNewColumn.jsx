@@ -1,6 +1,6 @@
 import React from 'react';
 import './AddNewColumn.css'
-import {PlusIcon} from "../Icons/PlusIcon";
+import {PlusIcon} from "../../../../components/Icons/PlusIcon";
 
 export const AddNewColumn = () => {
     return (
