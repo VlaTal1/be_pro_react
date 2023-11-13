@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css'
-import {MainMenu} from "../../components/MainMenu/MainMenu";
-import {Workspaces} from "../../components/Workspaces/Workspaces";
+import {MainMenu} from "./components/MainMenu/MainMenu";
+import {Workspaces} from "./components/Workspaces/Workspaces";
 
 export const Home = () => {
     const workspaces = [

@@ -1,9 +1,9 @@
 import React from 'react';
 import './MainMenu.css'
-import {WorkspaceMenuItem} from "../WorkspaceMenuItem/WorkspaceMenuItem";
-import {BoardIcon} from "../Icons/BoardIcon";
-import {TemplatesIcon} from "../Icons/TemplatesIcon";
-import {WorkspaceTitle} from "../WorkspaceTitle/WorkspaceTitle";
+import {WorkspaceMenuItem} from "../../../../components/WorkspaceMenuItem/WorkspaceMenuItem";
+import {BoardIcon} from "../../../../components/Icons/BoardIcon";
+import {TemplatesIcon} from "../../../../components/Icons/TemplatesIcon";
+import {WorkspaceTitle} from "../../../../components/WorkspaceTitle/WorkspaceTitle";
 
 export const MainMenu = ({workspaces}) => {
     return (

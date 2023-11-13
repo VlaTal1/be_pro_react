@@ -1,7 +1,7 @@
 import React from 'react';
 import './WorkspaceCard.css'
 import {BoardCard} from "../BoardCard/BoardCard";
-import {WorkspaceTitle} from "../WorkspaceTitle/WorkspaceTitle";
+import {WorkspaceTitle} from "../../../../components/WorkspaceTitle/WorkspaceTitle";
 
 export const WorkspaceCard = ({workspace}) => {
     return (
