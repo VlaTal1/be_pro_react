@@ -1,0 +1,42 @@
+.workspace-menu {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #254970;
+}
+
+.workspace-menu nav {
+    width: 100%;
+}
+
+.workspace-menu nav li {
+    width: 100%;
+}
+
+.workspace-menu-header {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    gap: 5px;
+    align-self: stretch;
+    border-bottom: 1px solid #7799BD;
+}
+
+.workspace-menu-header .workspace-title {
+    --font-color: #fff;
+}
+
+.workspace-menu-items {
+    width: 100%;
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.workspace-menu-items li .workspace-menu-item {
+    --font-color: #fff;
+}
