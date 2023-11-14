@@ -1,16 +1,32 @@
 .board-card {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 5px;
-    background: #7DA2CE;
     color: #fff;
     text-align: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.board-card-content {
+    width: 100%;
+    height: 100%;
+    background: #7DA2CE;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
 }

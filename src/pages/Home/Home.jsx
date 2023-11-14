@@ -2,6 +2,8 @@ import React from 'react';
 import './Home.css'
 import {MainMenu} from "./components/MainMenu/MainMenu";
 import {Workspaces} from "./components/Workspaces/Workspaces";
+import {BoardCard} from "./components/BoardCard/BoardCard";
+import pd from '../../images/templates/project_design.png'
 
 export const Home = () => {
     const workspaces = [
@@ -43,8 +45,9 @@ export const Home = () => {
 
     return (
         <main className="home">
-            <MainMenu workspaces={workspaces}/>
-            <Workspaces workspaces={workspaces} title="YOUR WORKSPACES"/>
+            {/*<MainMenu workspaces={workspaces}/>*/}
+            {/*<Workspaces workspaces={workspaces} title="YOUR WORKSPACES"/>*/}
+            <BoardCard title={"Project Design"} img={pd}/>
         </main>
     );
 };
