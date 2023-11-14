@@ -1,4 +1,52 @@
 .main-menu {
+    transition: 0.5s ease;
+}
+
+.burger-menu {
+    position: absolute;
+    display: none;
+}
+
+.burger-menu .icon-container {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-menu {
+        position: absolute;
+        top: 82px;
+        left: 0;
+    }
+
+    .main-menu nav {
+        background-color: #465a70;
+        min-width: 300px;
+        padding: 10px 50px 20px 10px;
+        height: calc(100vh - 82px);
+        --font-color: #fff;
+    }
+
+    .main-menu nav ul li .icon-container {
+        --accent-color: #fff !important;
+    }
+
+    .close {
+        transform: translateX(-252px);
+    }
+
+    .open {
+        left: 0;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 260px;
+        font-size: 20px;
+        cursor: pointer;
+    }
 }
 
 .main-menu nav {

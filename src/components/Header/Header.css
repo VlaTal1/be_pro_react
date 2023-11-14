@@ -17,3 +17,9 @@ header .icon-container {
     width: 120px;
     height: 31px;
 }
+
+@media screen and (max-width: 768px) {
+    .header-right-side .search-input {
+        display: none;
+    }
+}

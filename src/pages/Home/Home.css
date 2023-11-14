@@ -33,3 +33,11 @@
     --accent-color: #fff;
     --font-color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    .home {
+        margin-left: 70px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
