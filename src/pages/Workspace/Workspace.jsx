@@ -20,6 +20,13 @@ export const Workspace = () => {
                         ]
                     },
                     {
+                        name: "Ready",
+                        tasks: [
+                            {name: "lb 1"},
+                            {name: "lb 2"},
+                        ]
+                    },
+                    {
                         name: "In dev",
                         tasks: [
                             {name: "lb 3"},
@@ -29,6 +36,23 @@ export const Workspace = () => {
                         name: "Ready",
                         tasks: [
                             {name: "lb 1"},
+                            {name: "lb 2"},
+                        ]
+                    },
+                    {
+                        name: "Canceled",
+                        tasks: [
+                            {name: "lb 1"},
+                            {name: "lb 2"},
+                            {name: "lb 2"},
+                        ]
+                    },
+                    {
+                        name: "Not Important",
+                        tasks: [
+                            {name: "lb 1"},
+                            {name: "lb 2"},
+                            {name: "lb 2"},
                             {name: "lb 2"},
                         ]
                     },
