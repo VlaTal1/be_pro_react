@@ -10,6 +10,7 @@ import {LinesIcon} from "../../../../components/Icons/LinesIcon";
 export const MainMenu = ({workspaces, itemOnClick}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeItem, setActiveItem] = useState("boards")
+    const [expandDisplay, setExpandDisplay] = useState(false)
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -18,6 +19,14 @@ export const MainMenu = ({workspaces, itemOnClick}) => {
     const handleActiveItem = (itemName) => {
         setActiveItem(itemName)
         setIsMenuOpen(!isMenuOpen)
+
+        if (itemName === "boards") {
+            setExpandDisplay(false)
+        }
+    }
+
+    const handleExpand = () => {
+        setExpandDisplay(true)
     }
 
     return (
@@ -27,14 +36,31 @@ export const MainMenu = ({workspaces, itemOnClick}) => {
             </div>
             <nav>
                 <ul className="main-menu-header">
-                    <li><WorkspaceMenuItem icon={<BoardIcon/>} title="Boards" isActive={activeItem === "boards"} onClick={() => {
-                        itemOnClick("boards")
-                        handleActiveItem("boards")
-                    }}/></li>
-                    <li><WorkspaceMenuItem icon={<TemplatesIcon/>} title="Templates" isActive={activeItem === "templates"} onClick={() => {
-                        itemOnClick("templates")
-                        handleActiveItem("templates")
-                    }}/></li>
+                    <li><WorkspaceMenuItem icon={<BoardIcon/>} title="Boards" isActive={activeItem === "boards"}
+                                           onClick={() => {
+                                               itemOnClick("boards")
+                                               handleActiveItem("boards")
+                                           }}/></li>
+
+                    <li onClick={handleExpand}>
+                        <WorkspaceMenuItem icon={<TemplatesIcon/>} title="Templates"
+                                           isActive={activeItem === "templates"} onClick={() => {
+                            itemOnClick("templates")
+                            handleActiveItem("templates")
+                        }}/>
+                    </li>
+                    <ul className="expanded-templates" style={{display: expandDisplay ? "flex" : "none"}}>
+                        <li><WorkspaceMenuItem title="Engineering templates"
+                                               isActive={activeItem === "engineering"} onClick={() => {
+                            itemOnClick("engineering")
+                            handleActiveItem("engineering")
+                        }}/></li>
+                        <li><WorkspaceMenuItem title="Design templates"
+                                               isActive={activeItem === "design"} onClick={() => {
+                            itemOnClick("design")
+                            handleActiveItem("design")
+                        }}/></li>
+                    </ul>
                 </ul>
                 <div className="main-menu-bottom">
                     <div className="main-menu-bottom-title">Workspaces</div>

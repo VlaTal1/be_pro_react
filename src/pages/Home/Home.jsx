@@ -11,6 +11,7 @@ import system_design from '../../images/templates/system_design.png'
 import game_design from '../../images/templates/game_design.png'
 import design_sprint from '../../images/templates/design_sprint.png'
 import {Templates} from "./components/Templates/Templates";
+import {TemplateBlock} from "./components/TemplateBlock/TemplateBlock";
 
 export const Home = () => {
     const [content, setContent] = useState("boards")
@@ -110,6 +111,12 @@ export const Home = () => {
                 )}
                 {content === "templates" && (
                     <Templates title="TEMPLATES" templates={templates}/>
+                )}
+                {content === "engineering" && (
+                    <TemplateBlock title="Engineering templates" template={templates[0]}/>
+                )}
+                {content === "design" && (
+                    <TemplateBlock title="Design templates" template={templates[1]}/>
                 )}
             </div>
         </main>
