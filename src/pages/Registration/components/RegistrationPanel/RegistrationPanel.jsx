@@ -15,6 +15,33 @@ export const RegistrationPanel = () => {
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     const phoneRegex = /^\+\d{1,2}\d{10}$/;
 
+    const handleSignUp = () => {
+        if (!nameSurnameRegex.test(name)) {
+            alert('Invalid Name');
+            return;
+        }
+
+        if (!nameSurnameRegex.test(surname)) {
+            alert('Invalid Surname');
+            return;
+        }
+
+        if (!password.test(password)) {
+            alert('Invalid Password');
+            return;
+        }
+
+        if (!emailRegex.test(email)) {
+            alert('Invalid Email');
+            return;
+        }
+
+        if (!phoneRegex.test(phone)) {
+            alert('Invalid Phone Number');
+            return;
+        }
+    };
+
     return (
         <div className="registration-panel">
             <div className="registration-header">REGISTRATION</div>
@@ -62,7 +89,7 @@ export const RegistrationPanel = () => {
                 </div>
             </div>
             <div className="registration-footer">
-                <button className="registration-button">
+                <button className="registration-button" onClick={handleSignUp}>
                     Sign Up
                 </button>
             </div>
