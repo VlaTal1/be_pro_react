@@ -16,9 +16,15 @@ export const RegistrationPanel = () => {
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     const phoneRegex = /^\+\d{1,2}\d{10}$/;
 
-    const handleSignUp = () => {
-
-        if (!nameSurnameRegex.test(name) || !nameSurnameRegex.test(surname) || !passwordRegex.test(password) || !emailRegex.test(email) || !phoneRegex.test(phone)) {
+    const handleSignUp = (e) => {
+        if (
+            !nameSurnameRegex.test(name) ||
+            !nameSurnameRegex.test(surname) ||
+            !passwordRegex.test(password) ||
+            !emailRegex.test(email) ||
+            !phoneRegex.test(phone)
+        ) {
+            e.preventDefault();
             anime({
                 targets: '.registration-button',
                 backgroundColor: '#ff4d4d',
@@ -36,15 +42,12 @@ export const RegistrationPanel = () => {
             });
             return;
         }
-
-        // Validation passed, proceed with sign-up logic
-        console.log('Sign Up logic here');
     };
 
     return (
         <div className="registration-panel">
             <div className="registration-header">REGISTRATION</div>
-            <div className="registration-content">
+            <form className="registration-content">
                 <div className={`registration-item ${!nameSurnameRegex.test(name) ? 'invalid' : ''}`}>
                     <div className="registration-item-label">Name</div>
                     <SearchInput
@@ -86,11 +89,11 @@ export const RegistrationPanel = () => {
                         placeholder="Phone"
                     />
                 </div>
-            </div>
-            <div className="registration-footer">
                 <button className="registration-button" onClick={handleSignUp}>
                     Sign Up
                 </button>
+            </form>
+            <div className="registration-footer">
             </div>
         </div>
     );
