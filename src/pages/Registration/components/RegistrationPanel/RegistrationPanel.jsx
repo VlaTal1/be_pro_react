@@ -2,6 +2,7 @@ import React from 'react';
 import {SearchInput} from "../../../../components/Header/SearchInput/SearchInput";
 import './RegistrationPanel.css'
 import {useState} from "react";
+import anime from 'animejs/lib/anime.es.js';
 
 export const RegistrationPanel = () => {
     const [name, setName] = useState('');
@@ -16,30 +17,28 @@ export const RegistrationPanel = () => {
     const phoneRegex = /^\+\d{1,2}\d{10}$/;
 
     const handleSignUp = () => {
-        if (!nameSurnameRegex.test(name)) {
-            alert('Invalid Name');
+
+        if (!nameSurnameRegex.test(name) || !nameSurnameRegex.test(surname) || !passwordRegex.test(password) || !emailRegex.test(email) || !phoneRegex.test(phone)) {
+            anime({
+                targets: '.registration-button',
+                backgroundColor: '#ff4d4d',
+                translateX: [-5, 5],
+                duration: 200,
+                easing: 'easeInOutQuad',
+                direction: 'alternate',
+                complete: () => {
+                    anime({
+                        targets: '.registration-button',
+                        backgroundColor: '#393583',
+                        translateX: 0,
+                    });
+                },
+            });
             return;
         }
 
-        if (!nameSurnameRegex.test(surname)) {
-            alert('Invalid Surname');
-            return;
-        }
-
-        if (!password.test(password)) {
-            alert('Invalid Password');
-            return;
-        }
-
-        if (!emailRegex.test(email)) {
-            alert('Invalid Email');
-            return;
-        }
-
-        if (!phoneRegex.test(phone)) {
-            alert('Invalid Phone Number');
-            return;
-        }
+        // Validation passed, proceed with sign-up logic
+        console.log('Sign Up logic here');
     };
 
     return (
