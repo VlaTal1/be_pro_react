@@ -13,8 +13,10 @@ export const Header = () => {
                 <Logo/>
             </Link>
             <div className="header-right-side">
-                <SearchInput/>
-                <Avatar img={img}/>
+                <SearchInput placeholder="Search"/>
+                <Link to="/registration">
+                    <Avatar img={img}/>
+                </Link>
             </div>
         </header>
     );

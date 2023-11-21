@@ -1,10 +1,10 @@
 import React from "react";
 import './SearchInput.css';
 
-export const SearchInput = () => {
-  return (
-    <div>
-      <input type="text" placeholder="Search" className="search-input"></input>
-    </div>
-  );
+export const SearchInput = ({placeholder, type = "text", onChange}) => {
+    return (
+        <div>
+            <input type={type} placeholder={placeholder} className="search-input" onChange={onChange}></input>
+        </div>
+    );
 };

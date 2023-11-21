@@ -1,0 +1,66 @@
+.registration-panel {
+    display: flex;
+    padding: 25px 30px 40px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 20px;
+    background: #628BB8;
+    min-width: 400px;
+    max-width: 560px;
+}
+
+.registration-header {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.registration-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.registration-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.registration-item-label {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.registration-button {
+    display: flex;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 15px;
+    background: #393583;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.registration-item .search-input {
+    font-size: 16px;
+}
+
+.invalid .search-input {
+    border: 2px solid #FF0000; /* Add a visual indication for invalid input */
+}
